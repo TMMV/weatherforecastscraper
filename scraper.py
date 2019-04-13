@@ -73,16 +73,16 @@ for city_name, city_code in cities.items():
         'city': city_name
     }
 
-#     print(city_name)
+    print(city_name)
     for day_n in range(0,7):
         day_id = 'tabDay' + str(day_n)
         day = soup.find(id=day_id)
         max_temp = day.find("span", class_="tab-temp-high")['data-value']
         min_temp = day.find("span", class_="tab-temp-low")['data-value']
         
-#         print('Day: ' + str(day_n))
-#         print('Max Temperature: ' + max_temp)
-#         print('Min Temperature: ' + min_temp)
+        print('Day: ' + str(day_n))
+        print('Max Temperature: ' + max_temp)
+        print('Min Temperature: ' + min_temp)
         
         table_entry['day'+str(day_n)+'_maxtemp'] = max_temp
         table_entry['day'+str(day_n)+'_mintemp'] = min_temp
