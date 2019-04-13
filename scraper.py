@@ -4,8 +4,7 @@ import datetime
 import scraperwiki
 import time
 
-from requests.packages.urllib3.exceptions import InsecureRequestWarning
-requests.packages.urllib3.disable_warnings(InsecureRequestWarning)
+requests.packages.urllib3.disable_warnings()
 
 cities = {
     'Edinburgh': 'gcvwr3zrw',
