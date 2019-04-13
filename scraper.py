@@ -1,3 +1,6 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*
+
 from bs4 import BeautifulSoup
 import requests
 import datetime
@@ -41,7 +44,7 @@ cities = {
     'Luxembourg': 'u0u65rpxp',
     'Skopje': 'srrqeyx4w',
     'Valletta': 'sq6k4r011',
-    'Chișinău': 'u8ke89d1e',
+    'Chisinau': 'u8ke89d1e',
     'Monaco': 'spv2bfe5f',
     'Podgorica': 'srt9qspk8',
     'Amsterdam': 'u173zeb54',
