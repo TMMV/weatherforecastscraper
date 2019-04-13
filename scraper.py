@@ -96,5 +96,5 @@ for table_entry in table_entries:
     
     
 # horrible hack for this to work with morpy.io
-time.sleep(50)
+time.sleep(300)
 copyfile('scraperwiki.sqlite', 'data.sqlite')
