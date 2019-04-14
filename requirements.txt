@@ -1,4 +1,4 @@
-beautifulsoup4==4.5.1
+BeautifulSoup4==4.5.1
 requests>=2.20.0
 wheel==0.26.
-scraperwiki
+-e git+http://github.com/openaustralia/scraperwiki-python.git@morph_defaults#egg=scraperwiki

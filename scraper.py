@@ -1,3 +1,6 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*
+
 from bs4 import BeautifulSoup
 import requests
 import datetime
@@ -92,9 +95,4 @@ for city_name, city_code in cities.items():
     table_entries.append(table_entry)
     
 for table_entry in table_entries:
-    scraperwiki.sql.save(unique_keys=['date','city'], data=table_entry)
-    
-    
-# horrible hack for this to work with morpy.io
-time.sleep(300)
-copyfile('scraperwiki.sqlite', 'data.sqlite')
+    scraperwiki.sql.save(unique_keys=['date','city'], data=table_entry, table_name='data')
